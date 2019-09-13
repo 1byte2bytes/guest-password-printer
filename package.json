@@ -27,7 +27,7 @@
   "dependencies": {
     "serialport": "^4.0.3",
     "thermalprinter": "git://github.com/henne-/thermalPrinter.git",
-    "unifi-api": "0.0.1"
+    "unifi-api": "0.0.1",
     "request-json": "^0.6.0"
   }
 }
