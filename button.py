@@ -23,13 +23,13 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(buttonPin,GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 if(testingGPIO):
-  print "Press the connected button. If you are pressing but you do not see any further output then....there is something wrong with the connection."
+  print("Press the connected button. If you are pressing but you do not see any further output then....there is something wrong with the connection.")
 
 while True:
 #waits for Pin Input and then exectures the script below
   if (GPIO.input(buttonPin)):
     if (testingGPIO):
-      print "PIN " + buttonPin + " works correctly."
+      print("PIN " + buttonPin + " works correctly.")
       continue
     #the script that will be executed (as root)
     os.system("node index.js")
